@@ -1,0 +1,6 @@
+node_modules
+npm-debug.log
+data/
+output/
+*.csv
+.DS_Store

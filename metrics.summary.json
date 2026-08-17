@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-17T14:34:11.182Z",
+  "config": {
+    "numImages": 12,
+    "imgVariant": "solid",
+    "imgWidth": 400,
+    "imgHeight": 300,
+    "simulateDownloads": true,
+    "render": true,
+    "playwright": "1.49.1",
+    "baseUrl": "http://127.0.0.1:8080"
+  },
+  "coldStart": {
+    "spinUpMs": 35,
+    "rssMBAtReady": 81.07
+  },
+  "job": {
+    "browserLaunchMs": 99,
+    "blobDownload": {
+      "images": [
+        {
+          "name": "img-01.png",
+          "bytes": 649,
+          "ms": 4,
+          "status": 200
+        },
+        {
+          "name": "img-02.png",
+          "bytes": 707,
+          "ms": 1,
+          "status": 200
+        },
+        {
+          "name": "img-03.png",
+          "bytes": 900,
+          "ms": 1,
+          "status": 200
+        },
+        {
+          "name": "img-04.png",
+          "bytes": 1113,
+          "ms": 1,
+          "status": 200
+        },
+        {
+          "name": "img-05.png",
+          "bytes": 1350,
+          "ms": 1,
+          "status": 200
+        },
+        {
+          "name": "img-06.png",
+          "bytes": 1557,
+          "ms": 1,
+          "status": 200
+        },
+        {
+          "name": "img-07.png",
+          "bytes": 668,
+          "ms": 0,
+          "status": 200
+        },
+        {
+          "name": "img-08.png",
+          "bytes": 822,
+          "ms": 1,
+          "status": 200
+        },
+        {
+          "name": "img-09.png",
+          "bytes": 1063,
+          "ms": 1,
+          "status": 200
+        },
+        {
+          "name": "img-10.png",
+          "bytes": 1254,
+          "ms": 1,
+          "status": 200
+        },
+        {
+          "name": "img-11.png",
+          "bytes": 1359,
+          "ms": 0,
+          "status": 200
+        },
+        {
+          "name": "img-12.png",
+          "bytes": 530,
+          "ms": 1,
+          "status": 200
+        }
+      ],
+      "totalBytes": 11972,
+      "totalMs": 13,
+      "mbPerSec": 0.8782606858473558
+    },
+    "renderMs": 585,
+    "pdfBytes": 54357,
+    "pdfFile": "/app/data/output.pdf"
+  },
+  "memory": {
+    "peakRssMB": 82.74,
+    "rssNowMB": 82.74,
+    "samplesCount": 13
+  },
+  "measurement": {
+    "externalContainerSpinUpMs": 508,
+    "imageBytes": 834808763,
+    "containerMemUsageAtSample": "0B / 0B"
+  }
+}

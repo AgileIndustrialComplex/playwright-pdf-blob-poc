@@ -24,12 +24,13 @@ class BlobStore {
       const sizeMul = 0.6 + ((i * 0.15) % 0.8); // vary dimensions
       const width = Math.max(64, Math.round(w * sizeMul));
       const height = Math.max(64, Math.round(h * sizeMul));
+      const name = `img-${String(i + 1).padStart(2, '0')}.png`;
       const buffer = makePng(width, height, [r, g, b], imgVariant);
       this.images.push({
-        name: `img-${String(i + 1).padStart(2, '0')}.png`,
+        name,
         buffer,
         bytes: buffer.length,
-        blobUrl: `/blob/${imgVariant}/${String(i + 1).padStart(2, '0')}.png?sv=2020-08-04&sp=r&sig=FAKE-SAS-${i}${(i * 7) % 100}`,
+        blobUrl: `/blob/${imgVariant}/${name}?sv=2020-08-04&sp=r&sig=FAKE-SAS-${i}${(i * 7) % 100}`,
       });
     }
     return this.images;
